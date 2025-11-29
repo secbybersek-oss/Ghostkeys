@@ -1,0 +1,63 @@
+#include <Keyboard.h>
+
+void setup() {
+  Keyboard.begin();
+  delay(1000); // Espera que el sistema reconozca el dispositivo
+
+  // Letras mayúsculas A–Z
+  for (char c = 'A'; c <= 'Z'; c++) {
+    Keyboard.press(KEY_LEFT_SHIFT);
+    Keyboard.press(c + 32); // convierte a minúscula y aplica Shift
+    delay(100);
+    Keyboard.releaseAll();
+    delay(200);
+  }
+
+  // Letras minúsculas a–z
+  for (char c = 'a'; c <= 'z'; c++) {
+    Keyboard.press(c);
+    delay(100);
+    Keyboard.releaseAll();
+    delay(200);
+  }
+
+  // Números 0–9
+  for (char c = '0'; c <= '9'; c++) {
+    Keyboard.press(c);
+    delay(100);
+    Keyboard.releaseAll();
+    delay(200);
+  }
+
+  // Símbolos comunes (sin Shift)
+  const char* simbolos = "`-=[]\\;',./";
+  for (int i = 0; simbolos[i] != '\0'; i++) {
+    Keyboard.press(simbolos[i]);
+    delay(100);
+    Keyboard.releaseAll();
+    delay(200);
+  }
+
+  // Símbolos con Shift (¡pueden variar según layout!)
+  const char* simbolosShift = "~_+{}|:\"<>?";
+  for (int i = 0; simbolosShift[i] != '\0'; i++) {
+    Keyboard.press(KEY_LEFT_SHIFT);
+    Keyboard.press(simbolosShift[i]);
+    delay(100);
+    Keyboard.releaseAll();
+    delay(200);
+  }
+
+  // Símbolos con AltGr (para español latinoamericano)
+  Keyboard.press(KEY_RIGHT_ALT); Keyboard.press('q'); delay(100); Keyboard.releaseAll(); delay(200); // @
+  Keyboard.press(KEY_RIGHT_ALT); Keyboard.press('1'); delay(100); Keyboard.releaseAll(); delay(200); // |
+  Keyboard.press(KEY_RIGHT_ALT); Keyboard.press('e'); delay(100); Keyboard.releaseAll(); delay(200); // €
+  Keyboard.press(KEY_RIGHT_ALT); Keyboard.press('4'); delay(100); Keyboard.releaseAll(); delay(200); // {
+  Keyboard.press(KEY_RIGHT_ALT); Keyboard.press('5'); delay(100); Keyboard.releaseAll(); delay(200); // }
+
+  Keyboard.end();
+}
+
+void loop() {
+  // No se repite
+}

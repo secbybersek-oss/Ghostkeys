@@ -1,0 +1,4 @@
+#include <Keyboard.h>           // Para emular pulsaciones HID
+#include <Wire.h>               // Comunicación I2C (necesaria para la OLED)
+#include <Adafruit_GFX.h>       // Librería gráfica base para OLED
+#include <Adafruit_SSD1306.h>   // Controlador específico para pantallas OLED 128x64
