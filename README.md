@@ -54,23 +54,27 @@ MIT License – libre para usar, modificar y compartir con fines educativos
 ---
 
 ⚠️ USO EXCLUSIVO PARA DEMOSTRACIONES EDUCATIVAS Y AUTORIZADAS
+
 ✅ Permitido:
-• 	Simulación de pulsaciones HID en entornos controlados
-• 	Demostraciones de phishing ético con cuentas de prueba
-• 	Captura de credenciales en laboratorios educativos
-• 	Auditorías internas con consentimiento explícito
-• 	Documentación visual con fotos y anotaciones técnicas
-• 	Uso de joystick y OLED para navegación de menús educativos
+
+1. 	Simulación de pulsaciones HID en entornos controlados
+2. 	Demostraciones de phishing ético con cuentas de prueba
+3. 	Captura de credenciales en laboratorios educativos
+4. 	Auditorías internas con consentimiento explícito
+5.	Documentación visual con fotos y anotaciones técnicas
+6. 	Uso de joystick y OLED para navegación de menús educativos
+
 
 ❌ Prohibido:
-• 	Uso en sistemas ajenos sin autorización
-• 	Captura de credenciales reales o cuentas personales
-• 	Distribución de payloads sin contexto educativo
-• 	Alteración de sistemas operativos o redes externas
-• 	Simulación de ataques sin señalización ética clara
-• 	Uso fuera de laboratorios o entornos de prueba
 
-## 🛠️ Instalación
+1. 	Uso en sistemas ajenos sin autorización
+2. 	Captura de credenciales reales o cuentas personales
+3. 	Distribución de payloads sin contexto educativo
+4. 	Alteración de sistemas operativos o redes externas
+5. 	Simulación de ataques sin señalización ética clara
+6. 	Uso fuera de laboratorios o entornos de prueba
+
+## 🛠️ Instalación - Como usarlo
 1. Instala [Arduino IDE](https://www.arduino.cc/en/software).
 2. Conecta tu Arduino Leonardo/Micro (compatible con HID).
 3. Instala las librerías (librerias_a_descargar)
@@ -87,6 +91,9 @@ MIT License – libre para usar, modificar y compartir con fines educativos
 
 - Si alguien usa otro layout (ej. US, ES España), algunos símbolos (@, |, {}, ()) pueden no salir igual.
 
+  
+---
+ESTADO FINAL
 - ![proyecto](https://github.com/user-attachments/assets/077aec37-9458-4242-b4dd-35194cb1161f)
 
 ---
